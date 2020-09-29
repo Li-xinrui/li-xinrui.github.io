@@ -609,6 +609,22 @@ kbd {
   -ms-transform: rotate(0);
   transform: rotate(0);
 }
+body {
+  position: relative;
+}
+body::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  height: 100vh;
+  z-index: -2;
+  background: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1601314339961&di=1cb794921dffa422005a47745e368ebc&imgtype=0&src=http%3A%2F%2Fi2.hdslb.com%2Fbfs%2Farchive%2F6ff895033a55a7e954698e7651c1aa622ccda857.png") no-repeat center/cover;
+}
 .container {
   white-space: normal;
   word-wrap: break-word;
@@ -892,6 +908,7 @@ kbd {
   z-index: 0;
   width: 100%;
   height: 100%;
+  background: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1601364633741&di=38e95a7655fb341cd8b622276c590c2d&imgtype=0&src=http%3A%2F%2Fe.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2F6609c93d70cf3bc73bb8e2f9d300baa1cd112a6e.jpg") no-repeat center/cover;
 }
 .header-banner-info {
   position: absolute;
@@ -1042,6 +1059,7 @@ kbd {
   opacity: 1;
   -ms-filter: none;
   filter: none;
+  border-radius: 50%;
 }
 .sidebar-ov-author__avatar:hover .sidebar-ov-author__avatar_img {
   -webkit-animation: avatar-turn 0.8s both ease-out;
@@ -1089,6 +1107,31 @@ kbd {
 .sidebar-ov-author__text {
   margin: 0.5rem 0 0;
   font-weight: 600;
+}
+.sidebar-ov-social {
+  padding: 0.5rem 0;
+  text-align: center;
+}
+.sidebar-ov-social-item {
+  display: inline-block;
+  margin: 0.2rem;
+  text-align: center;
+  color: var(--color-gray-100);
+  background-color: #a0daff;
+  border-radius: 0.75rem;
+  padding: 0 0.25rem;
+  min-width: 1.5rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  -webkit-transition: background-color 0.2s ease;
+  -moz-transition: background-color 0.2s ease;
+  -o-transition: background-color 0.2s ease;
+  -ms-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+.sidebar-ov-social-item:hover {
+  color: var(--color-gray-100);
+  background-color: #4dbaff;
 }
 .sidebar-ov-state {
   padding: 0.5rem 0;
